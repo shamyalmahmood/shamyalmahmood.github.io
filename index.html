@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title> Happy Anniversary </title>
+  <link rel = "icon" type = "image/x-icon" href = "Favicon.png">
+
+<style>
+  @font-face 
+    {
+      font-family: 'Grinched';
+      src: url('Grinched WOFF.woff') format('woff'),
+           url('Grinched WOFF2.woff2') format('woff2');
+    }
+
+    body
+    {
+      color: #FF647F;
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      font-family: 'Grinched';
+      font-size: 200%;
+      background-image: url('background4.jfif');
+      text-align: center;
+    }
+
+   button
+    { 
+      font-family: 'Grinched';
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      position:relative;
+      display:inline-block;
+    }
+
+    .pushable 
+    {
+      background: #2E8889;
+      border-radius: 20px;
+      border: 2px solid black;
+      padding: 0px;
+      cursor: pointer;
+      outline-offset: 4px;
+    }
+    
+    .front 
+    {
+      display: inline-block;
+      padding: 5px 40px;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-size: 50px;
+      background: #90DCE4;
+      color: #FF647F;
+      transform: translateY(-6px);
+    }
+
+    .pushable:active .front 
+    {
+      transform: translateY(-2px);
+    }
+    
+    img
+    {
+      max-width: 30%;
+      max-height: 30%;
+      margin: 0px;
+    }
+
+    h2
+    {
+      margin: 0px;
+    }
+</style>
+</head>
+
+<body onload="setWH()">
+    <img src = "Frogs2.png">
+    <h1> Do you love me? </h1>
+        <button id = "yesBtn" onclick = "redirectToAnotherPage()" class = "pushable"> <span class = "front"> Yes </span> </button>
+        <button id = "noBtn" onmousemove = "moveNoButton()" class = "pushable"> <span class = "front"> No </span> </button>
+    <script>
+      function redirectToAnotherPage() 
+      {
+        window.location.href = 'Page2.html';
+      }
+
+      function moveNoButton() 
+      {
+        let noBtn = document.getElementById('noBtn');
+        let newX = (Math.random() * (window.innerWidth - noBtn.offsetWidth)) % 500;
+        let newY = (Math.random() * (window.innerHeight - noBtn.offsetHeight)) % 50;
+        noBtn.style.left = newX + 'px';
+        noBtn.style.top = newY + 'px';
+      }
+    </script>
+</body>
+</html>

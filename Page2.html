@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title> Why do you hate me? </title>
+  <link rel = "icon" type = "image/x-icon" href = "Favicon.png">
+
+<style>
+  @font-face 
+    {
+      font-family: 'Grinched';
+      src: url('Grinched WOFF.woff') format('woff'),
+           url('Grinched WOFF2.woff2') format('woff2');
+    }
+
+    body
+    {
+      color: #FF647F;
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      font-family: 'Grinched';
+      font-size: 200%;
+      background-image: url('background4.jfif');
+      text-align: center;
+    }
+
+    button
+    { 
+      font-family: 'Grinched';
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      position:relative;
+      display:inline-block;
+    }
+
+    .pushable 
+    {
+      background: #2E8889;
+      border-radius: 20px;
+      border: 2px solid black;
+      padding: 0px;
+      cursor: pointer;
+      outline-offset: 4px;
+    }
+    
+    .front 
+    {
+      display: inline-block;
+      padding: 5px 40px;
+      border: 2px solid black;
+      border-radius: 20px;
+      font-size: 50px;
+      background: #90DCE4;
+      color: #FF647F;
+      transform: translateY(-6px);
+    }
+
+    .pushable:active .front 
+    {
+      transform: translateY(-2px);
+    }
+    
+    img
+    {
+      max-width: 30%;
+      max-height: 30%;
+      margin: 0px;
+    }
+
+    h2
+    {
+      margin: 0px;
+    }
+</style>
+</head>
+
+<body>
+    <img src = "Frogs3.png">
+    <h2> Did you really think that you could say no? </h2>
+    <h2> This is your last time to choose. </h2>
+    <h2> Do you love me? </h2>
+    <button id = "yesBtn" onclick = "redirectToAnotherPage()" class = "pushable"> <span class = "front"> Yes </span> </button>
+    <script> 
+      function redirectToAnotherPage() 
+      {
+        window.location.href = 'Page3.html';
+      }
+    </script>
+</body>
+</html>

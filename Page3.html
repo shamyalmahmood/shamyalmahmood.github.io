@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title> I Love You <3 </title>
+  <link rel = "icon" type = "image/x-icon" href = "Favicon.png">
+ 
+  <style>
+    @font-face 
+    {
+      font-family: 'Grinched';
+      src: url('Grinched WOFF.woff') format('woff'),
+           url('Grinched WOFF2.woff2') format('woff2');
+    }
+
+    body
+    {
+      color: #FF647F;
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+      font-family: 'Grinched';
+      font-size: 200%;
+      background-image: url('background4.jfif');
+      text-align: center;
+      margin: 0px;
+    }
+
+    img
+    {
+      max-width: 50%;
+      max-height: 50%;
+    }
+    
+    * 
+    {
+      box-sizing: border-box;
+    }
+
+    .column 
+    {
+      float: left;
+      width: 50%;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    .row::after 
+    {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width:600px) 
+    {
+      .column 
+      {
+        width: 100%;
+      }
+    }
+
+    h2 
+    {
+      margin: 0px;
+    }
+  </style>
+</head>
+
+<body>
+<div class="row">
+  <div class="column">
+    <br>
+    <img src = "Frogs1.png">
+    <h2> Good boy that was the only right answer </h2>
+  </div>
+
+  <div class="column">
+    <br> <br> <br>
+    <h2> Now you can scan this code <img src = "Floating Image.png" style = "width:55px; height:35px;"> </h2>  
+    <a href="https://docs.google.com/document/d/1HE2qFS0DSRmtStPkh2N-ghqnd8E0fy2ppmXjqxJafWA/edit?usp=sharing">
+    <img src = "WishQRCode.png" style = "max-width: 20%; max-height: 20%;">
+    </a>
+  </div>
+</div>
+</body>
+</html>
